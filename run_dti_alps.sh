@@ -3,7 +3,6 @@
 # DTI-ALPS Index Calculation Pipeline
 # =============================================================================
 # Description: Calculates DTI-ALPS index as a proxy for subcortical fluid dynamics
-# Reference: [Your Article Citation]
 # Requirements: FSL (https://fsl.fmrib.ox.ac.uk)
 # =============================================================================
 
