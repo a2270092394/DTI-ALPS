@@ -31,7 +31,7 @@ cd dti-alps-pipeline
  Make the script executable
 chmod +x run_dti_alps.sh
 
-## Citation
+Citation
 
 If you use this pipeline, please cite:
 
@@ -41,7 +41,7 @@ Measures of Brain Fluid Dynamics Associated with Persistence of Post-COVID-19 Br
 
 ---
 
-## Contact
+Contact
 
 Xiaoduo Liu
 
