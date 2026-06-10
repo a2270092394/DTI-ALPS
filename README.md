@@ -24,14 +24,14 @@ The method quantifies diffusivity along the x, y, and z axes within projection a
 ## Installation
 
 ```bash
-# Clone the repository
+ Clone the repository
 git clone https://github.com/yourusername/dti-alps-pipeline.git
 cd dti-alps-pipeline
 
-# Make the script executable
+ Make the script executable
 chmod +x run_dti_alps.sh
 
-# Citation
+## Citation
 
 If you use this pipeline, please cite:
 
@@ -41,7 +41,7 @@ Measures of Brain Fluid Dynamics Associated with Persistence of Post-COVID-19 Br
 
 ---
 
-# Contact
+## Contact
 
 Xiaoduo Liu
 
