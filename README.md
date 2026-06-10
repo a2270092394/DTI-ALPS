@@ -30,3 +30,25 @@ cd dti-alps-pipeline
 
 # Make the script executable
 chmod +x run_dti_alps.sh
+
+# Citation
+
+If you use this pipeline, please cite:
+
+Zhou S, Wang Z, Liu X, et al.
+
+Measures of Brain Fluid Dynamics Associated with Persistence of Post-COVID-19 Brain Fog and Cognitive Impairment.
+
+---
+
+# Contact
+
+Xiaoduo Liu
+
+2270092394@qq.com/a2270092394@gmail.com
+
+Department of Neurology
+
+Xuanwu Hospital, Capital Medical University
+
+Beijing, China****
