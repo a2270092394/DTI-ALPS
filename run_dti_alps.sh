@@ -92,6 +92,7 @@ dtifit \
     -m b0_brain_mask.nii.gz \
     -r DTI_eddy.bvec \
     -b DTI.bval
+    --save_tensor
 echo "  ✓ Complete"
 echo
 
