@@ -10,7 +10,7 @@ set -e
 # -----------------------------
 
 SUBJECT_DIR=$1
-TEMPLATE_FA="/mnt/d/DTI_ALPS/template/HCP1065_FA_1mm.nii.gz"
+TEMPLATE_FA="/mnt/d/DTI_ALPS/template/FSL_HCP1065_FA_1mm.nii.gz"
 ROI_DIR="/mnt/d/DTI_ALPS/ROI"
 OUT_DIR="${SUBJECT_DIR}/DTI_ALPS"
 
@@ -123,26 +123,26 @@ done
 echo "Step 7: Extract diffusivity values from predefined ROIs"
 
 # Required ROI names:
-# LeftProjROI.nii.gz
-# LeftAssoROI.nii.gz
-# RightProjROI.nii.gz
-# RightAssoROI.nii.gz
+# Prj_L_r3mm.nii.gz
+# Ass_L_r3mm.nii.gz
+# Prj_R_r3mm.nii.gz
+# Ass_R_r3mm.nii.gz
 
-Dxproj_L=$(fslmeants -i ${OUT_DIR}/Dx_HCP.nii.gz -m ${ROI_DIR}/LeftProjROI.nii.gz)
-Dyproj_L=$(fslmeants -i ${OUT_DIR}/Dy_HCP.nii.gz -m ${ROI_DIR}/LeftProjROI.nii.gz)
-Dzproj_L=$(fslmeants -i ${OUT_DIR}/Dz_HCP.nii.gz -m ${ROI_DIR}/LeftProjROI.nii.gz)
+Dxproj_L=$(fslmeants -i ${OUT_DIR}/Dx_HCP.nii.gz -m ${ROI_DIR}/Prj_L_r3mm.nii.gz)
+Dyproj_L=$(fslmeants -i ${OUT_DIR}/Dy_HCP.nii.gz -m ${ROI_DIR}/Prj_L_r3mm.nii.gz)
+Dzproj_L=$(fslmeants -i ${OUT_DIR}/Dz_HCP.nii.gz -m ${ROI_DIR}/Prj_L_r3mm.nii.gz)
 
-Dxasso_L=$(fslmeants -i ${OUT_DIR}/Dx_HCP.nii.gz -m ${ROI_DIR}/LeftAssoROI.nii.gz)
-Dyasso_L=$(fslmeants -i ${OUT_DIR}/Dy_HCP.nii.gz -m ${ROI_DIR}/LeftAssoROI.nii.gz)
-Dzasso_L=$(fslmeants -i ${OUT_DIR}/Dz_HCP.nii.gz -m ${ROI_DIR}/LeftAssoROI.nii.gz)
+Dxasso_L=$(fslmeants -i ${OUT_DIR}/Dx_HCP.nii.gz -m ${ROI_DIR}/Ass_L_r3mm.nii.gz)
+Dyasso_L=$(fslmeants -i ${OUT_DIR}/Dy_HCP.nii.gz -m ${ROI_DIR}/Ass_L_r3mm.nii.gz)
+Dzasso_L=$(fslmeants -i ${OUT_DIR}/Dz_HCP.nii.gz -m ${ROI_DIR}/Ass_L_r3mm.nii.gz)
 
-Dxproj_R=$(fslmeants -i ${OUT_DIR}/Dx_HCP.nii.gz -m ${ROI_DIR}/RightProjROI.nii.gz)
-Dyproj_R=$(fslmeants -i ${OUT_DIR}/Dy_HCP.nii.gz -m ${ROI_DIR}/RightProjROI.nii.gz)
-Dzproj_R=$(fslmeants -i ${OUT_DIR}/Dz_HCP.nii.gz -m ${ROI_DIR}/RightProjROI.nii.gz)
+Dxproj_R=$(fslmeants -i ${OUT_DIR}/Dx_HCP.nii.gz -m ${ROI_DIR}/Prj_R_r3mm.nii.gz)
+Dyproj_R=$(fslmeants -i ${OUT_DIR}/Dy_HCP.nii.gz -m ${ROI_DIR}/Prj_R_r3mm.nii.gz)
+Dzproj_R=$(fslmeants -i ${OUT_DIR}/Dz_HCP.nii.gz -m ${ROI_DIR}/Prj_R_r3mm.nii.gz)
 
-Dxasso_R=$(fslmeants -i ${OUT_DIR}/Dx_HCP.nii.gz -m ${ROI_DIR}/RightAssoROI.nii.gz)
-Dyasso_R=$(fslmeants -i ${OUT_DIR}/Dy_HCP.nii.gz -m ${ROI_DIR}/RightAssoROI.nii.gz)
-Dzasso_R=$(fslmeants -i ${OUT_DIR}/Dz_HCP.nii.gz -m ${ROI_DIR}/RightAssoROI.nii.gz)
+Dxasso_R=$(fslmeants -i ${OUT_DIR}/Dx_HCP.nii.gz -m ${ROI_DIR}/Ass_R_r3mm.nii.gz)
+Dyasso_R=$(fslmeants -i ${OUT_DIR}/Dy_HCP.nii.gz -m ${ROI_DIR}/Ass_R_r3mm.nii.gz)
+Dzasso_R=$(fslmeants -i ${OUT_DIR}/Dz_HCP.nii.gz -m ${ROI_DIR}/Ass_R_r3mm.nii.gz)
 
 # -----------------------------
 # Step 8. Calculate ALPS index
