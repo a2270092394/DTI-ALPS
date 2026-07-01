@@ -76,13 +76,13 @@ DTI.bval
 Predefined template files:
 
 ```
-HCP1065_FA_template.nii.gz
+FSL_HCP1065_FA_1mm.nii.gz
 
-LeftProjROI.nii.gz
-RightProjROI.nii.gz
+Prj_L_r3mm.nii.gz
+Prj_R_r3mm.nii.gz
 
-LeftAssoROI.nii.gz
-RightAssoROI.nii.gz
+Ass_L_r3mm.nii.gz
+Ass_R_r3mm.nii.gz
 ```
 
 ---
