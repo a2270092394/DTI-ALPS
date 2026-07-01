@@ -113,7 +113,7 @@ If you use this pipeline, please cite:
 
 Zhou S, Wang Z, Liu X, *et al.*
 
-*Measures of Brain Fluid Dynamics Associated with Persistence of Post-COVID-19 Brain Fog and Cognitive Impairment.*
+*Surrogates of Brain Fluid Dynamics Associated with Persistence of Post-COVID-19 Brain Fog and Cognitive Impairment.*
 
 ---
 
